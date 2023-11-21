@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Práctico de Javascript</title>
+</head>
+<body>
+    <h1 class="titulo">Curso Práctico de Javascript</h1>
+    <p>Aprendiendo</p>
+
+    <pre>
+        const h1 = document.querySelector('h1')
+        const clase = h1.getAttribute('class')
+
+        console.log({ clase })
+
+        h1.setAttribute('class', 'subtitulo')
+
+        h1.classList.add('importante')
+        h1.classList.remove('subtitulo')
+        h1.classList.toggle('verde')
+        h1.classList.contains('verde')
+    </pre>
+
+    <hr>
+
+    <pre>
+        const p = document.querySelector('p')
+        const img = document.createElement('img');
+        img.setAttribute('src', 'https://i.pinimg.com/originals/8b/02/40/8b02409f975c98c89e15bc089e3bd289.gif');
+        
+        console.log(img);
+
+        p.innerHTML = ''
+        p.append(img)
+        // p.replaceWith(img);
+    </pre>
+
+    <script>
+        const h1 = document.querySelector('h1')
+        const clase = h1.getAttribute('class')
+
+        console.log({ clase })
+
+        h1.setAttribute('class', 'subtitulo')
+
+        h1.classList.add('importante')
+        h1.classList.remove('subtitulo')
+        h1.classList.toggle('verde')
+        h1.classList.contains('verde')
+
+        const p = document.querySelector('p')
+        const img = document.createElement('img');
+        img.setAttribute('src', 'https://i.pinimg.com/originals/8b/02/40/8b02409f975c98c89e15bc089e3bd289.gif');
+        console.log(img);
+
+        p.innerHTML = ''
+        p.append(img)
+        // p.replaceWith(img);
+    </script>
+</body>
+</html>
